@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart
+.js"></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<div
+			style="
+				width: 1500px;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				align-items: center;
+                margin: 0 auto;
+			">
+			<div style="position: absolute; right: 0">
+				<div
+					style="display: flex; gap: 5px; align-items: center">
+					<span style="width: 10px; height: 5px; background: purple"></span> vaccine
+				</div>
+				<div
+					style="display: flex; gap: 5px; align-items: center">
+					<span style="width: 10px; height: 5px; background: yellow"></span> absolute immunitet
+				</div>
+				<div
+					style="display: flex; gap: 5px; align-items: center">
+					<span style="width: 10px; height: 5px; background: green"></span> substitute
+				</div>
+
+				<div
+					style="display: flex; gap: 5px; align-items: center">
+					<span style="width: 10px; height: 5px; background: blue"></span> recovered
+				</div>
+
+				<div
+					style="display: flex; gap: 5px; align-items: center">
+					<span style="width: 10px; height: 5px; background: black"></span> dead
+				</div>
+
+				<div
+					style="display: flex; gap: 5px; align-items: center">
+					<span style="width: 10px; height: 5px; background: red"></span> sick
+				</div>
+			</div>
+
+			<canvas id="canvas" width="1000" height="1000"></canvas>
+			<button
+				style="
+					width: 250px;
+					height: 35px;
+					cursor: pointer;
+					border-radius: 5px;
+					border: 1px solid #c9c9c9;
+					font-size: 14px;
+				"
+				id="start">
+				Start
+			</button>
+			<div><canvas id="myChart" width="1000" height="1000"></canvas></div>
+			<div>
+				<div id="expPercent">carantine:</div>
+				<canvas id="myChart1" width="1000" height="1000"></canvas>
+			</div>
+
+			<div>
+				<div>Experiment graphic</div>
+				<canvas id="expChart" width="1000" height="1000"></canvas>
+			</div>
+		</div>
+
+		<script src="script.js" defer></script>
+	</body>
+</html>
